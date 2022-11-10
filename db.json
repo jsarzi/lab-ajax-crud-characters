@@ -13,6 +13,34 @@
       "occupation": "Lives under the sea",
       "weapon": "Crabby Patty",
       "cartoon": true
+    },
+    {
+      "name": "dd",
+      "occupation": "dd",
+      "weapon": "dd",
+      "checkbox": "true",
+      "id": 4
+    },
+    {
+      "name": "aa",
+      "occupation": "aa",
+      "weapon": "aa",
+      "checkbox": "true",
+      "id": 5
+    },
+    {
+      "name": "dd",
+      "occupation": "dd",
+      "weapon": "dd",
+      "checkbox": {},
+      "id": 6
+    },
+    {
+      "name": "ss",
+      "occupation": "ss",
+      "weapon": "ss",
+      "checkbox": true,
+      "id": 7
     }
   ]
 }

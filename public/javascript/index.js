@@ -48,11 +48,35 @@ window.addEventListener("load", () => {
 
   document
     .getElementById("edit-character-form")
-    .addEventListener("submit", function (event) {});
+    .addEventListener("submit", function (event) {
+      // const id = document.querySelector("#input2").value;
+      // axios
+      //   .post(`http://localhost:8000/characters/${id}`)
+      //   .then((res) => {
+      //     const e = res.data;
+      //     console.log(id);
+      //   })
+      //   .catch((error) => console.log(error));
+    });
 
   document
     .getElementById("new-character-form")
-    .addEventListener("submit", function (event) {});
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = document.querySelector("#name").value;
+      const occupation = document.querySelector("#occupation").value;
+      const weapon = document.querySelector("#weapon").value;
+      const checkbox = document.querySelector("#checkbox").checked;
+
+      const character = { name, occupation, weapon, checkbox };
+      const newCharacter = axios.post(
+        "http://localhost:8000/characters",
+        character
+      );
+
+      console.log(newCharacter);
+    });
 });
 
 function appendCharacterToView(e) {
